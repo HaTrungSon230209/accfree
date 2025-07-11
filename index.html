@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhập Key Nhận Acc Vip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #00cc00;
+      color: #fff;
+    }
+
+    .account-box {
+      background: #000; /* ✅ Nền đen tuyệt đối */
+      padding: 15px;
+      margin: 15px auto;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+      color: white;
+      border: 2px solid red;
+      box-shadow: 0 0 15px 3px #ff0000;
+      position: relative;
+      z-index: 1;
+    }
+
+.account-box {
+  background: #000;
+  padding: 15px;
+  margin: 15px auto;
+width: 70%;
+max-width: 320px;
+  border-radius: 12px;
+  color: white;
+  border: 3px solid transparent;
+  position: relative;
+  z-index: 1;
+  animation: rainbowBorder 3s linear infinite;
+}
+
+@keyframes rainbowBorder {
+  0% {
+    box-shadow: 0 0 4px red;
+    border-color: red;
+  }
+  20% {
+    box-shadow: 0 0 4px orange;
+    border-color: orange;
+  }
+  40% {
+    box-shadow: 0 0 4px yellow;
+    border-color: yellow;
+  }
+  60% {
+    box-shadow: 0 0 4px green;
+    border-color: green;
+  }
+  80% {
+    box-shadow: 0 0 4px blue;
+    border-color: blue;
+  }
+  100% {
+    box-shadow: 0 0 4px violet;
+    border-color: violet;
+  }
+}
+
+
+
+    #accContainer {
+      display: none;
+    }
+
+    #errorText {
+      color: red;
+      margin-top: 10px;
+    }
+
+    #huongDan {
+      color: #00ffcc;
+      font-size: 16px;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔒 Nhập Key Nhận Acc Vip</h2>
+  <input type="text" id="keyInput" placeholder="Nhập key tại đây...">
+
+  <div class="button-container">
+    <button class="btn" onclick="layKey()">🔑 Lấy Key</button>
+    <button class="btn" onclick="xacNhanKey()">✅ Xác Nhận Key</button>
+  </div>
+
+<!-- ✅ Ảnh mạng nhện bên dưới -->
+<div style="margin-top: 15px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLKUZPSi_9O2ApaMsg5R_zHCphmEu71SL5hg&s=18" 
+       alt="Mạng Nhện" 
+       style="max-width: 120px; height: auto;">
+</div>
+
+  <p id="huongDan">Đã Sao Chép Hãy Dán Ra Trình Duyệt Để Lấy Key 🔑</p>
+  <p id="errorText"></p>
+
+  <div id="accContainer">
+    <div class="account-box">
+      <strong>Liên Quân</strong><br>
+       Tài Khoản : lqfree123<br>
+       Mật Khẩu : 12345678
+    </div>
+
+    <div class="account-box">
+      <strong>Free Fire</strong><br>
+       Tài Khoản : ffpro999<br>
+       Mật Khẩu : abcdefgh
+    </div>
+
+    <div class="account-box">
+      <strong>Roblox</strong><br>
+       Tài Khoản : robuxking<br>
+       Mật Khẩu : roblox2025
+    </div>
+  </div>
+
+  <script>
+    const keyDung = "Key-accvip2302";
+
+    function layKey() {
+      const keyLink = "https://yeumoney.com/UGWgRD/abcxyz"; // thay link rút gọn của bạn
+
+      document.getElementById("huongDan").style.display = "block";
+
+      navigator.clipboard.writeText(keyLink).then(() => {
+        console.log("Đã sao chép link");
+      });
+    }
+
+    function xacNhanKey() {
+      const nhapKey = document.getElementById("keyInput").value.trim();
+      const accContainer = document.getElementById("accContainer");
+      const errorText = document.getElementById("errorText");
+
+      if (nhapKey === keyDung) {
+        accContainer.style.display = "block";
+        errorText.textContent = "";
+      } else {
+        accContainer.style.display = "none";
+        errorText.textContent = "⚠️ Key  Sai Vui Lòng Thử Lại !"   }
+    }
+  </script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mạng Nhện Xanh Nước Biển</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="webCanvas"></canvas>
+
+<script>
+  const canvas = document.getElementById("webCanvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const points = [];
+  for (let i = 0; i < 60; i++) {
+    points.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Vẽ các điểm
+    ctx.fillStyle = "#0099ff"; // ✅ màu xanh nước biển
+    for (let p of points) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Vẽ các đường mạng
+    for (let i = 0; i < points.length; i++) {
+      for (let j = i + 1; j < points.length; j++) {
+        const dx = points[i].x - points[j].x;
+        const dy = points[i].y - points[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.strokeStyle = "rgba(0, 153, 255, 0.2)"; // ✅ đường nối xanh nước biển
+          ctx.beginPath();
+          ctx.moveTo(points[i].x, points[i].y);
+          ctx.lineTo(points[j].x, points[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Di chuyển các điểm
+    for (let p of points) {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
